@@ -2,8 +2,6 @@
 
 This project implements a lightweight web application framework in Java (without Spring), using reflection and annotations for route registration, with concurrent request handling and graceful shutdown. It includes Docker containerization, Docker Hub publishing flow, and AWS EC2 deployment steps.
 
-Repository: https://github.com/Rogerrdz/Modularizaci-n_con_virtualizaci-n_e_Introducci-n_a_Docker_Arquitecturas_Empresariales.git
-
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing. The Maven module is inside AppWebServer_Docker, so all build and run commands must be executed from that folder.
