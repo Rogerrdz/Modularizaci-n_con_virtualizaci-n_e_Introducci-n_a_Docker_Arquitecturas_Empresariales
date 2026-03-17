@@ -127,85 +127,73 @@ Remember to open inbound rule Custom TCP 42000 in the instance Security Group.
 
 ## Evidence
 
-### Running the tests
+### Docker Build and Containers
 
-Test execution results (`mvn test`):
+Building Docker image:
 
-![Test Execution](AppWebServer_Docker/src/images/test_execution.png)
+![Docker Build](AppWebServer_Docker/images/docker_build.png)
 
-### Local Execution Evidence
+Images available locally:
 
-Server running locally with compiled classes:
+![Docker Images](AppWebServer_Docker/images/docker_images.png)
 
-![Local Execution](AppWebServer_Docker/src/images/execution_MicroSpringBoot2..png)
+![Docker Images Desktop](AppWebServer_Docker/images/docker_images_comprovation_Docker_Desktop.png)
+
+Running containers:
+
+![Docker Instances](AppWebServer_Docker/images/docker_instances.png)
+
+![Docker PS](AppWebServer_Docker/images/docker_ps.png)
+
+Browser test in local container deployment:
+
+![Localhost 34002](AppWebServer_Docker/images/localhost_34002.png)
+
+### Docker Compose Evidence
+
+Compose execution with web and MongoDB:
+
+![Docker Compose 1](AppWebServer_Docker/images/docker-compose_mongodb1.png)
+
+![Docker Compose 2](AppWebServer_Docker/images/docker-compose_mongodb2.png)
+
+![Docker PS All Services](AppWebServer_Docker/images/docker_ps_all_services_created.png)
+
+### Docker Hub Evidence
+
+Docker Hub repository created:
+
+![Docker Hub Repo](AppWebServer_Docker/images/docker_hub_repo_created.png)
+
+Tagged image for Docker Hub:
+
+![Docker Hub Reference](AppWebServer_Docker/images/reference_to_docker_hub_repo_created.png)
+
+Push image to Docker Hub:
+
+![Docker Push](AppWebServer_Docker/images/docker_push_to_docker_hub.png)
+
+Published tags in Docker Hub:
+
+![Docker Hub Tags](AppWebServer_Docker/images/docker_hub_tags.png)
 
 ### AWS EC2 Evidence
 
 EC2 instance created:
 
-![EC2 Instance](AppWebServer_Docker/src/images/created_instance.png)
+![EC2 Instance](AppWebServer_Docker/images/created_instance.png)
 
-Local folder with SSH keys and compiled classes:
+First connection to AWS instance:
 
-![SSH Folder](AppWebServer_Docker/src/images/folder_with_keys_and_classes.png)
+![First Connection AWS](AppWebServer_Docker/images/first_connection_aws_instance.png)
 
-SFTP connection to upload files to the server:
+Container running in AWS from Docker Hub image:
 
-![SFTP Connection](AppWebServer_Docker/src/images/sftp_connection.png)
+![Docker Image AWS](AppWebServer_Docker/images/docker_iamge_aws_instance.png)
 
-Installing Amazon Corretto 21 on the server:
+Public DNS endpoint working:
 
-![Corretto 21 Install](AppWebServer_Docker/src/images/Install_the_JDK_for_Amazon_Corretto_21_server.png)
-
-![Corretto 21 Install Complete](AppWebServer_Docker/src/images/Install_the_JDK_for_Amazon_Corretto_21_server_complete%20.png)
-
-Unzipping compiled classes on the server:
-
-![Unzip Classes](AppWebServer_Docker/src/images/unzip_calsses.zip.png)
-
-Security Group inbound rules configuration:
-
-![Security Group Rules](AppWebServer_Docker/src/images/unboundes_rules_security_group_server.png)
-
-### Application accessed via public DNS
-
-Server running and responding via EC2 public DNS:
-
-![Public DNS](AppWebServer_Docker/src/images/correct_execution_with_public_DNS_server.png)
-
-Home page (`/index.html`):
-
-![Index](AppWebServer_Docker/src/images/correct_execution_with_public_DNS_server_index.png)
-
-Route `/pi`:
-
-![PI](AppWebServer_Docker/src/images/correct_execution_with_public_DNS_server_pi.png)
-
-Route `/euler`:
-
-![Euler](AppWebServer_Docker/src/images/correct_execution_with_public_DNS_server_e.png)
-
-Route `/hello`:
-
-![Hello](AppWebServer_Docker/src/images/correct_execution_with_public_DNS_server_hello.png)
-
-Route `/hello?name=Roger`:
-
-![Hello with name](AppWebServer_Docker/src/images/correct_execution_with_public_DNS_server_hello_name.png)
-
-![Hello with name 2](AppWebServer_Docker/src/images/correct_execution_with_public_DNS_server_hello_name2.png)
-
-Route `/greeting?name=Juan`:
-
-![Greeting](AppWebServer_Docker/src/images/correct_execution_with_public_DNS_server_greeting_name.png)
-
-Route `/greeting/bye?name=Juan`:
-
-![Greeting Bye](AppWebServer_Docker/src/images/correct_execution_with_public_DNS_server_greeting_bye.png)
-
-Route `/greeting/welcome?name=Roger`:
-
-![Greeting Welcome](AppWebServer_Docker/src/images/correct_execution_with_public_DNS_server_greeting_welcome.png)
+![Public DNS](AppWebServer_Docker/images/uri_public_dns_aws_final.png)
 
 ## Built With
 
